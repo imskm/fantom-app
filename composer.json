@@ -1,0 +1,37 @@
+{
+	"name": "imskm/fantom-app",
+	"description": "The Fantom app.",
+	"keywords": ["fantom", "php mvc fantom app", "web application"],
+	"authors": [
+		{
+			"name": "Shek Muktar",
+			"email": "skm_im07@live.com"
+		}
+	],
+	"require": {
+		"php": ">=7.0",
+		"imskm/fantom": "^1.0"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/imskm/fantom"
+		}
+	],
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Fantom\\Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"prefer-stable": true
+}
