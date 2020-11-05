@@ -71,15 +71,8 @@ class Auth
 			return false;
 		}
 
-		if (! password_verify($old, $user->password)) {
-			self::$error = "Old password doesn't match in database.";
-			return false;
-		}
-
-		$user->password = password_hash($new, PASSWORD_DEFAULT);
-		
-		if ($user->save() === false) {
-			self::$error = "Failed to update new password.";
+		if ($user->changePassword($old, $new) === false) {
+			self::$error = $user->getError();
 			return false;
 		}
 
