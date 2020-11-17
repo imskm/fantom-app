@@ -44,7 +44,7 @@
               Settings
             </a>
             <hr class="navbar-divider">
-            <a href="/auth/logout" class="navbar-item">
+            <a href="/auth/login/logout" class="navbar-item">
               <span class="icon is-medium">
                 <i class="fas fa-sign-out-alt"></i>
               </span>

@@ -1,4 +1,4 @@
-<form action="/auth/store" method="post">
+<form action="/auth/register/store" method="post">
   
   <?php include VIEW_PATH . '/partials/_message.php' ?>
 

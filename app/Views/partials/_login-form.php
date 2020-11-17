@@ -1,4 +1,4 @@
-<form action="/auth/authenticate" method="post">
+<form action="/auth/login/authenticate" method="post">
   <div class="field">
     <lable class="label">Email</lable>
     <p class="control has-icons-left">
@@ -18,8 +18,17 @@
     </p>
   </div>
   <div class="field">
-    <p class="control">
-      <button class="button is-success">Login</button>
-    </p>
+    <div class="control">
+      <div class="columns">
+        <div class="column">
+          <button class="button is-success">Login</button>
+        </div>
+        <div class="column">
+          <p class="has-text-right">
+            <a href="">Forgotten password?</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </form>

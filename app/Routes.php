@@ -20,7 +20,8 @@
  *  as done below in ["controller" => "Home"]
  */
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
-$router->add('auth/{action}', ['controller' => 'Auth', 'namespace' => 'Auth']);
+$router->add('auth/{controller}', ['action' => 'index', 'namespace' => 'Auth']);
+$router->add('auth/{controller}/{action}', ['namespace' => 'Auth']);
 
 $router->add('user', [
 	'controller' 	=> 'Home',

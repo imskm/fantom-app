@@ -9,36 +9,13 @@ use App\Support\Authentication\Auth;
 use App\Support\Validations\AuthValidator;
 
 /**
- * AuthController class
+ * RegisterController
  */
-class AuthController extends Controller
+class RegisterController extends Controller
 {
-	protected function login()
+	protected function index()
 	{
-		$this->view->render('Auth/login.php');
-	}
-
-	protected function register()
-	{
-		$this->view->render('Auth/register.php');
-	}
-
-	protected function authenticate()
-	{
-		$validator = AuthValidator::validateLogin();
-
-		// No need to set the error in the session
-		// it is already handled by view
-		if ($validator->hasError()) {
-			redirect('auth/login');
-		}
-
-		if (!Auth::attempt($_POST['email'], $_POST['password'])) {
-			Session::flash('error', 'Invalid email or password.');
-			redirect('auth/login');
-		}
-
-		redirect('user');
+		$this->view->render("Auth/Register/index.php");
 	}
 
 	protected function store()
@@ -59,12 +36,6 @@ class AuthController extends Controller
 		Session::flash('success', 'Account created successfully.');
 
 		redirect('auth/login');
-	}
-
-	public function logout()
-	{
-		Auth::logout();
-		redirect('/');
 	}
 
 	protected function before()
