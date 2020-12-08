@@ -72,5 +72,6 @@
 <?php $this->content() ?>
 </div>
 
+<?php $this->fetchSection('test-section') ?>
 </body>
 </html>

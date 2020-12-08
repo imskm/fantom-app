@@ -84,7 +84,7 @@ class Config
 	 *
 	 */
 	const SITE_CONFIG = array(
-
+		"site_url"				=> "http://fantom-app",
 		"site_name" 			=> "Fantom",
 		"csrf_name" 			=> "csrf_token",
 		"old_post_sessname"		=> "old_post",

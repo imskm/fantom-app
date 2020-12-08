@@ -4,6 +4,7 @@ resource/
 tests/
 temp/
 vendor/
+storage/
 
 .*
 !.gitignore

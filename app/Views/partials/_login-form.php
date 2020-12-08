@@ -25,7 +25,7 @@
         </div>
         <div class="column">
           <p class="has-text-right">
-            <a href="">Forgotten password?</a>
+            <a href="/auth/forgot-password">Forgotten password?</a>
           </p>
         </div>
       </div>
