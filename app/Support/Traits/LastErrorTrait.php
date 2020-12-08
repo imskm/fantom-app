@@ -16,12 +16,12 @@ trait LastErrorTrait
 	 */
 	private $_last_error = "";
 
-	public function setError($message)
+	public function setLastError($message)
 	{
 		$this->_last_error = $message;
 	}
 
-	public function getError()
+	public function getLastError()
 	{
 		return $this->_last_error;
 	}
