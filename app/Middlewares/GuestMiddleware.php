@@ -13,10 +13,16 @@ class GuestMiddleware
 
     public function __invoke()
     {
-        if (Auth::check()) {
-        	redirect($this->redirect_to);
+        if (! Auth::check()) {
+        	return true;
         }
 
-        return true;
+        if (Auth::isAdmin()) {
+            redirect('admin/home/index');
+        } else if (Auth::isUser()) {
+            redirect($this->redirect_to);
+        }
+
+        return false;
     }
 }

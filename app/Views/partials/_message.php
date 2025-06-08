@@ -19,3 +19,8 @@
 		<?= Fantom\Session::flash('success') ?>
 	</div>
 <?php endif; ?>
+<?php if (Fantom\Session::hasFlash('warning')): ?>
+	<div class="notification is-warning">
+		<?= Fantom\Session::flash('warning') ?>
+	</div>
+<?php endif; ?>

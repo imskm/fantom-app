@@ -20,6 +20,7 @@
 		}
 	],
 	"require-dev": {
+		"phpstan/phpstan": "^2.1",
 		"phpunit/phpunit": "^9"
 	},
 	"autoload": {
@@ -29,7 +30,8 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Fantom\\Tests\\": "tests/"
+			"Fantom\\Tests\\": "tests/",
+			"Application\\": "src/"
 		}
 	},
 	"config": {
