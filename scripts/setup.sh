@@ -4,6 +4,7 @@ mkdir -p public/assets/css
 mkdir -p public/assets/img
 mkdir -p public/assets/js
 mkdir -p public/uploads
+mkdir -p tests
 
 chmod 777 public/uploads
 
