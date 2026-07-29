@@ -1,0 +1,1 @@
+- [ ] Break NotificationTrat in two parts SMSNotificationTrait and EmailNotificationTrait
