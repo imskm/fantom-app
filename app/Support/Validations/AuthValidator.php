@@ -8,7 +8,7 @@ use Fantom\Validation\Validator;
  * AuthValidation class
  * To handle all vlidations related authentication
  */
-class AuthValidator extends Validator
+final class AuthValidator extends Validator
 {
 	public static function validateRegistration()
 	{

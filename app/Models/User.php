@@ -4,10 +4,10 @@ namespace App\Models;
 
 use App\Config;
 use Fantom\Log\Log;
-use Fantom\Database\Model;
 use App\Support\Mail\Mail;
+use Fantom\Database\Model;
 use App\Support\Traits\LastErrorTrait;
-use App\Support\Traits\NotificationTrait;
+use App\Support\Traits\EmailNotificationTrait;
 use Fantom\Support\Auth\User as Authenticatable;
 
 /**
@@ -19,7 +19,7 @@ class User extends Authenticatable
 	protected $table   = 'users';
 
 	use LastErrorTrait;
-	use NotificationTrait;
+	use EmailNotificationTrait;
 
 	public static function make(array $data)
 	{

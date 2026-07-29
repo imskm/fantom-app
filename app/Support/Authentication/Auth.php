@@ -88,4 +88,9 @@ class Auth
 	{
 		return self::user()->isAdmin();
 	}
+
+	public static function isUser(): bool
+	{
+		return self::user()->isUser();
+	}
 }

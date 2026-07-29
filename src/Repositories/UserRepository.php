@@ -16,6 +16,7 @@ class UserRepository extends User
 	CONST ROLE_ADMIN = 1;
 	CONST ROLE_STAFF = 2;
 	CONST ROLE_AUTHOR = 3;
+	CONST ROLE_USER = 9;
 
 	use ModelOperationsTrait;
 
@@ -72,6 +73,11 @@ class UserRepository extends User
 	public function isAdmin()
 	{
 		return (int) $this->role === self::ROLE_ADMIN;
+	}
+
+	public function isUser()
+	{
+		return (int) $this->role === self::ROLE_USER;
 	}
 
 	public function isStaff()
